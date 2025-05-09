@@ -1,8 +1,4 @@
-html,body{
-    background-color: rgb(176, 126, 126);
-    color: black;
-    font-size: 1.2rem;
-}
+
 /* imagen de banner de decoracion de la pagina home */
 .banner{
     position: absolute;

@@ -1,0 +1,33 @@
+/* pie de pagina de home */    
+
+.contenedor_footer{
+    position: absolute;
+    top:119.5%;
+    left:0.5%; 
+    width: 100%;
+    height: 13%;
+    border: 4px solid black; 
+    z-index: 100; /* Este valor puede ser ajustado */
+    background-color: black;
+}
+.page_footer_text{
+    text-align: center;
+    color: white ;
+    font-size: 1rem;
+    text-align: center;
+}
+.ul-foot {
+    position: absolute;
+    left: 10%;
+    display:grid;
+    grid-template-columns:25% 25% 25%;
+    grid-template-rows: 50%;
+    position: relative;
+    color: white;
+}
+.li-foot {
+    display: grid;
+    }
+.fa-instagram {
+    font-size: 1rem;
+}

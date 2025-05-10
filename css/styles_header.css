@@ -23,6 +23,10 @@ html,body{
     font-family:Arial, Helvetica, sans-serif;
     font-size: 0.7rem;
 }
+.pretitulo:hover {
+    color: green ; /* por ejemplo, el color de TikTok */
+    font-size: 0.8rem;
+}
 /* Contenedor de BELLA DECO y el logo */
 .contenedor_titulo{
     position: absolute;
@@ -53,6 +57,9 @@ h1{
     width: 4% ;
     z-index: 100; /* Este valor puede ser ajustado */          
 }      
+.logo:hover {
+    width: 5% ;
+}
 nav{   
     position:sticky;
     position: absolute;
@@ -74,4 +81,9 @@ nav{
 
 .a1{
     color:black;
+}
+
+.a1:hover {
+    color: red ; /* por ejemplo, el color de TikTok */
+    font-size: 1.2rem;
 }

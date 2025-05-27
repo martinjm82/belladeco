@@ -1,4 +1,4 @@
-html,body{
+html, body {
     background-color: rgb(176, 126, 126);
     background-image: url(/assets/Backgrounds/Background2.jpg);
     background-repeat: no-repeat;
@@ -6,95 +6,138 @@ html,body{
     background-attachment: fixed;
     color: black;
     font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* Contenedor de la informacion de venta telefonica */
-.contenedor_pretitulo{
-    position: absolute;
-    top : 0.5%;
-    left: 0.3%;  
+
+/* VENTA TELEFÓNICA */
+.contenedor_pretitulo {
+    position: relative;
     width: 100%;
-    height: 5%;
-    border: 4px solid black  ;    
-    z-index: 100; /* Este valor puede ser ajustado */ 
-    color: white;
+    padding: 5px 10px;
     background-color: black;
+    color: white;
+    border: 4px solid black;
+    z-index: 100;
 }
-/* Informacion de venta telefonica  ej: VENTA TELEFÓNICA: 11 5955 1111 */
-.pretitulo{
-    position: absolute;
-    top : 18%;
-    left: 1%;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 0.7rem;
+
+.pretitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
 }
+
 .pretitulo:hover {
-    color: yellow ; /* por ejemplo, el color de TikTok */
+    color: yellow;
     font-size: 0.8rem;
 }
-/* Contenedor de BELLA DECO y el logo */
-.contenedor_titulo{
-    position: absolute;
-    top: 7%;
-    left: 0.3%;   
+
+/* CONTENEDOR DE TÍTULO Y LOGO */
+.contenedor_titulo {
+    position: relative;
     width: 100%;
-    height: 15%;
-    border: 4px solid rgb(242, 131, 149);
-    z-index: 100; /* Este valor puede ser ajustado */ 
+    padding: 15px 10px;
     background-color: white;
+    border: 4px solid rgb(242, 131, 149);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    box-sizing: border-box;
+    z-index: 99;
+    flex-wrap: wrap;
 }
-/* BELLA DECO Y LOGO */
-.titulo{
-    position: absolute;
-    top: -15%;
-    left: 2%;  
-}
-h1{/* BELLA DECO */
-    font-size: 2rem;    
-    text-align: left;
-    color:rgb(128, 28, 45);
-    font-family:Arial, Helvetica, sans-serif;
-}
-.logo1{
-    position: absolute;
-    top: 15%;
-    left: 18%;   
-    height: 60%;
 
+/* LOGO */
+.logo1 {
+    height: 80px;
+    transition: 0.3s ease;
 }
+
 .logo1:hover {
-    height: 70%;
-}
-nav{   
-    position:sticky;
-    position: absolute;
-    top: 20%;
-    left: 400%;
-}
-.ul-nav {
-    text-align:center;
-    display:grid;
-    grid-template-columns:60% 60% 60%;
-    grid-template-rows: 10%;
-}
-.li-nav {
-    display: grid;
-    justify-content:end;
-    align-items:center;
-    font-size: 1rem;
+    height: 90px;
 }
 
-.a1{
-    color:black;
+/* TÍTULO */
+.titulo h1 {
+    font-size: 2rem;
+    text-align: left;
+    color: rgb(128, 28, 45);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
+
+/* NAV */
+nav {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ul-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.li-nav {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a1 {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s, font-size 0.3s;
+}
+
 .a1:hover {
-    color: red ; /* por ejemplo, el color de TikTok */
+    color: red;
     font-size: 1.2rem;
 }
-/* fuentes de google en cursiva */
-.newsreader1{
+
+/* FUENTE NEWSREADER */
+.newsreader1 {
     font-family: "Newsreader", serif;
     font-optical-sizing: auto;
-    font-weight: 50%;
+    font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
+/* RESPONSIVE: Pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor_titulo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo1 {
+        height: 60px;
+    }
+
+    .titulo h1 {
+        font-size: 1.5rem;
+    }
+
+    .ul-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .li-nav {
+        font-size: 1rem;
+    }
+
+    .pretitulo {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+}

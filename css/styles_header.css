@@ -1,6 +1,9 @@
 html,body{
     background-color: rgb(176, 126, 126);
     background-image: url(/assets/Backgrounds/Background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: black;
     font-size: 1.2rem;
 }

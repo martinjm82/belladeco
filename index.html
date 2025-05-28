@@ -1,55 +1,74 @@
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bella - Deco-Art - Home </title>
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/styles_footer.css">
-        <link rel="stylesheet" href="./css/styles_header.css">
-        <script src="./javascript/cargar_header_footer.js" defer></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <!-- fuentes de google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="loader" class="loader-overlay">
-            <div class="spinner"></div>
-        </div>
-        <div id="header"></div>  <!-- Llama al header con javascript -->
-        <div class="banner">
-            <img class="banner"  src="./assets/Banners/banner.jpg" alt="Banner2">
-        </div>
-            
-        <div class="contenedor_central">
-        <div class="cuerpo_central">
-        <main> <!--...   Cuerpo central -->  
-            <ul class="ul-products">
-                <li class="li-products">
-                    <a href="./html/productos.html">
-                    <img src="./assets/Contenedores/IMG-20250501-WA0001.jpg" alt="Contenedores" width="150" height="150">
-                  </a>
-                </li>
-                <li class="li-products">
-                    <a href="./html/productos.html">
-                    <img src="./assets/Decorativos/IMG-20250501-WA0006.jpg" alt="Decorativos" width="150" height="150">
-                  </a>
-                </li>
-                <li class="li-products">
-                    <a href="./html/productos.html">
-                    <img src="./assets/Combos/IMG-20250501-WA0014.jpg" alt="Combos" width="150" height="150">
-                  </a>
-                </li>
-            </ul>
-            <!--...   Cuerpo central --> 
-        </main>
-        </div>
-        </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella - Deco-Art - Home</title>
 
-        <div id="footer"></div><!-- Llama al footer con javascript -->
-        
-    </body>
-    </html>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles_footer.css">
+  <link rel="stylesheet" href="./css/styles_header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Script -->
+  <script src="./javascript/cargar_header_footer.js" defer></script>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader-overlay">
+      <div class="spinner"></div>
+    </div>
+  
+    <!-- CONTENEDOR GENERAL -->
+    <div class="pagina">
+  
+      <!-- Header dinámico -->
+      <div id="header"></div>
+  
+      <!-- Banner -->
+
+      <div class="banner">
+        <img src="./assets/Banners/banner.jpg" alt="Banner">
+      </div>
+      
+      <!-- Contenido principal -->
+      <main>
+        <section class="contenedor_central">
+          <div class="cuerpo_central">
+            <ul class="ul-products">
+              <li class="li-products">
+                <a href="./html/productos.html">
+                  <img src="./assets/Contenedores/IMG-20250501-WA0001.jpg" alt="Contenedores" width="150" height="150">
+                </a>
+              </li>
+              <li class="li-products">
+                <a href="./html/productos.html">
+                  <img src="./assets/Decorativos/IMG-20250501-WA0006.jpg" alt="Decorativos" width="150" height="150">
+                </a>
+              </li>
+              <li class="li-products">
+                <a href="./html/productos.html">
+                  <img src="./assets/Combos/IMG-20250501-WA0014.jpg" alt="Combos" width="150" height="150">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+  
+      <!-- Footer dinámico -->
+      <footer class="contenedor_footer" id="footer"></footer>
+  
+    </div> <!-- FIN .pagina -->
+  </body>
+  
+</html>

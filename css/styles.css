@@ -1,72 +1,177 @@
-
-/* imagen de banner de decoracion de la pagina home */
-.banner{
-    position: absolute;
-    top: 14.8%;
-    left: 0.2%;
-    width: 100.2%;
-    height: 60%;
-    /*border: 1px solid pink;*/
-}      
-/* contenedor de imagenes de los productos en el centro de la pagina*/
-.contenedor_central{
-    position: absolute;
-    top:60%;
-    left:0.5%; 
-    width:100%;
-    height: 58%;
+/* Reset general */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Newsreader', serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Footer */
+  .contenedor_footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 4px solid #e68ca3;
+  }
+  
+  .page_footer_text {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .ul-foot {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+  }
+  
+  .li-foot {
+    display: flex;
+  }
+  
+  .a2 {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+  }
+  
+  .a2:hover .navegacion-blanco {
+    color: cyan;
+    font-size: 1.5rem;
+  }
+  .a2:hover .contacto-blanco {
+    color: lightgreen;
+    font-size: 1.5rem;
+  }
+  .a2:hover .facebook-blanco {
+    color: blue;
+    font-size: 1.5rem;
+  }
+  .a2:hover .insta-blanco {
+    color: yellow;
+    font-size: 1.5rem;
+  }
+  .a2:hover .tiktok-blanco {
+    color: #ff0050;
+    font-size: 1.5rem;
+  }
+  
+  /* Banner */
+  .banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  /* Contenedor principal */
+  .contenedor_central {
+    margin: 0;
+    padding: 20px;
     border: 4px solid rgb(242, 131, 149);
-    background-color: white; 
-    z-index: 100; /* Este valor puede ser ajustado */
-}
-/* imagenes de las categorias de productos */
-.cuerpo_central{
-    position: absolute;
-    top: 10%;
-    left: 15%;
-    text-align: left;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  
+  /* Cuerpo central */
+  .cuerpo_central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Lista de productos */
+  .ul-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cada producto como tarjeta */
+  .li-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 220px;
+    background-color: #fff;
+    border: 2px solid #e68ca3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    color:teal; 
-}
-.ul-products {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    display:grid;
-    grid-template-columns:50% 50% 50%;
-    grid-template-rows: 50%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .li-products:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  }
+  
+  .li-products img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Loader */
+  .loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;
+    border-top-color: #8a2b3b;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
     }
-.li-products {
-    display: grid;
-    justify-content:end;
-    align-items:center;
-    font-size: 1rem;
-    }
-
-    .loader-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.85);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 2000;
-    }
-    
-    .spinner {
-        width: 60px;
-        height: 60px;
-        border: 6px solid #ddd;
-        border-top-color: #8a2b3b; /* Color personalizado */
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin {
-        to { transform: rotate(360deg); }
-    }
+  }
+  .pagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  

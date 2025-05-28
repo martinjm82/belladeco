@@ -1,58 +1,53 @@
-/* pie de pagina de home */    
-.contenedor_footer{
-    position: absolute;
-    top:119.5%;
-    left:0.5%; 
-    width: 100%;
-    height: 13%;
-    border: 4px solid black; 
-    z-index: 100; /* Este valor puede ser ajustado */
-    background-color: black;
+.contenedor_footer {
+  background-color: black;
+  padding: 20px 0;
+  border-top: 4px solid black;
+  text-align: center;
+  color: white;
+  margin-top: auto;
 }
-.page_footer_text{
-    text-align: center;
-    color: white ;
-    font-size: 1rem;
-    text-align: center;
+
+.page_footer_text {
+  margin: 0 auto;
+  max-width: 800px;
 }
+
 .ul-foot {
-    position: absolute;
-    left: 35%;
-    display:grid;
-    grid-template-columns:5% 5% 5% 5% 5%;
-    grid-template-rows: 10%;
-    position: relative;
-    color: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 25px;
 }
+
 .li-foot {
-    display: grid;
-    }
+  display: flex;
+}
 
 .a2 {
-    color: white; /* Cambia el color a negro */
-  }
-
-.icono-blanco {
-    color: white;
+  color: white;
+  font-size: 24px;
+  transition: transform 0.2s ease;
 }
 
 .a2:hover .navegacion-blanco {
-    color: cyan; /* por ejemplo, el color de TikTok */
-    font-size: 1.5rem;
+  color: cyan;
+  font-size: 1.5rem;
 }
 .a2:hover .contacto-blanco {
-    color: lightgreen; /* por ejemplo, el color de TikTok */
-    font-size: 1.5rem;
+  color: lightgreen;
+  font-size: 1.5rem;
 }
 .a2:hover .facebook-blanco {
-    color: blue; /* por ejemplo, el color de TikTok */
-    font-size: 1.5rem;
+  color: blue;
+  font-size: 1.5rem;
 }
 .a2:hover .insta-blanco {
-    color: yellow; /* por ejemplo, el color de TikTok */
-    font-size: 1.5rem;
+  color: yellow;
+  font-size: 1.5rem;
 }
 .a2:hover .tiktok-blanco {
-    color: #ff0050; /* por ejemplo, el color de TikTok */
-    font-size: 1.5rem;
+  color: #ff0050;
+  font-size: 1.5rem;
 }

@@ -1,76 +1,26 @@
 /* Reset general */
-html, body {
-    height: 100%;
+/*html {
+  font-family: 'Newsreader', serif;
+}*/
+  html,body {
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+  }
+  .pagina {
+    max-width: auto;
     margin: 0;
-    padding: 0;
-    font-family: 'Newsreader', serif;
+    width: 100%;
+    padding: 5;
+    padding-right: 10px;
+    margin: 5px;
+    box-sizing: border-box;
   }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
   main {
     flex: 1;
     margin: 0;
     padding: 0;
   }
   
-  /* Footer */
-  .contenedor_footer {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    border-top: 4px solid #e68ca3;
-  }
-  
-  .page_footer_text {
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
-  .ul-foot {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    gap: 25px;
-  }
-  
-  .li-foot {
-    display: flex;
-  }
-  
-  .a2 {
-    color: white;
-    font-size: 24px;
-    transition: transform 0.2s ease;
-  }
-  
-  .a2:hover .navegacion-blanco {
-    color: cyan;
-    font-size: 1.5rem;
-  }
-  .a2:hover .contacto-blanco {
-    color: lightgreen;
-    font-size: 1.5rem;
-  }
-  .a2:hover .facebook-blanco {
-    color: blue;
-    font-size: 1.5rem;
-  }
-  .a2:hover .insta-blanco {
-    color: yellow;
-    font-size: 1.5rem;
-  }
-  .a2:hover .tiktok-blanco {
-    color: #ff0050;
-    font-size: 1.5rem;
-  }
   
   /* Banner */
   .banner img {
@@ -79,7 +29,8 @@ html, body {
     height: auto;
     margin: 0;
     padding: 0;
-    border: none;
+    border: 1px solid rgb(242, 131, 149);
+    border-radius: 5px;
   }
   /* Contenedor principal */
   .contenedor_central {
@@ -172,13 +123,6 @@ html, body {
   border-radius: 10px;
 }
 
-
-
-
-  
-
-  
-  
   /* Loader */
   .loader-overlay {
     position: fixed;
@@ -207,12 +151,6 @@ html, body {
       transform: rotate(360deg);
     }
   }
-  .pagina {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
+  
   
   

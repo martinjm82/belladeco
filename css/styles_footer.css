@@ -1,10 +1,10 @@
 .contenedor_footer {
   background-color: black;
   padding: 20px 0;
-  border-top: 4px solid black;
   text-align: center;
   color: white;
   margin-top: auto;
+  border: 2px solid black;
 }
 
 .page_footer_text {

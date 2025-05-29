@@ -85,19 +85,19 @@ html, body {
   .contenedor_central {
     margin: 0;
     padding: 20px;
-    border: 4px solid rgb(242, 131, 149);
+    border: 1px solid rgb(242, 131, 149);
     border-radius: 10px;
     background-color: white;
     box-sizing: border-box;
   }
-  
   /* Cuerpo central */
   .cuerpo_central {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
-  
+
+
   /* Lista de productos */
   .ul-products {
     display: flex;
@@ -125,6 +125,14 @@ html, body {
     padding: 10px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+
+  .li-products h5 {
+    margin-top: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8a2b3b;
+    text-align: center;
+  }
   
   .li-products:hover {
     transform: translateY(-5px);
@@ -132,11 +140,44 @@ html, body {
   }
   
   .li-products img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: 100%;
+    height: 140px; /* o el valor que mejor te quede */
     object-fit: cover;
+    border-radius: 8px;
   }
+
+  /* Contenedor principal */
+  .contenedor_video {
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid rgb(242, 131, 149);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .video-container {
+    display: flex;
+    margin: 10px 0;
+}
+
+.video-container video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid rgb(128, 28, 45);
+  border-radius: 10px;
+}
+
+
+
+
+  
+
+  
   
   /* Loader */
   .loader-overlay {

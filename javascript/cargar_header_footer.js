@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+  console.log("Entrando al script de JS")
+
+
     const header = document.getElementById("header");
     const footer = document.getElementById("footer");
   
@@ -7,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(res => res.text())
         .then(data => {
           header.innerHTML = data;
+          console.log("Carga header ")
         }),
       fetch("../html/footer.html")
         .then(res => res.text())
         .then(data => {
           footer.innerHTML = data;
+          console.log("Carga footer")
         })
     ]).then(() => {
       // Ocultar el loader cuando ambos hayan terminado

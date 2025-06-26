@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Compra</title>
+
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/styles_carrito.css">
+    <link rel="stylesheet" href="../css/styles_compra.css">
+    <link rel="stylesheet" href="../css/styles_footer.css">
+    <link rel="stylesheet" href="../css/styles_header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="/javascript/cargar_header_footer.js" defer></script>
+</head>
+<body>
+    <h3>Resumen de la compra</h3>
+    <main>
+        <section>
+        <div id="detalle"></div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <form id="formulario" action="acá pega tu dirección de FORMSPREE" method="POST">
+        <textarea id="carritoData" name="carrito" style="display:none;"></textarea>
+        <textarea id="totalCarrito" name="total" style="display:none;"></textarea>
+        <label>Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+        <label>Email:</label>
+        <input type="email" id="contactoEmail" name="email" placeholder="Correo electrónico" required>
+        <label>Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+        <button type="submit" id="botonEnviar">Confirmar Compra</button>
+    </form>
+    
+    <script src="../javascript/compra.js"></script>
+
+    <!-- Footer dinámico -->
+    <div class="contenedor_footer" id="footer"></div>
+</body>
+</html>
